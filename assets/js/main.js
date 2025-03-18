@@ -2,8 +2,8 @@
 const contactForm = document.getElementById('contact-form'),
     contactMessage = document.getElementById('contact-message')
 
-// Initialize EmailJS
-emailjs.init('8Y3CHItag2qgiEafy')
+// Initialize EmailJS with config
+emailjs.init(window.config.EMAILJS_PUBLIC_KEY)
 
 const sendEmail = (e) => {
     e.preventDefault()
@@ -12,7 +12,11 @@ const sendEmail = (e) => {
     contactMessage.textContent = 'Sending message...'
 
     // serviceID - templateID - #form - public key
-    emailjs.sendForm('service_9zpyj85', 'template_i8cq0gf', '#contact-form', '8Y3CHItag2qgiEafy')
+    emailjs.sendForm(
+        window.config.EMAILJS_SERVICE_ID,
+        window.config.EMAILJS_TEMPLATE_ID,
+        '#contact-form'
+    )
         .then(() => {
             // Show sent message
             contactMessage.textContent = 'Message sent successfully ✅'
@@ -77,10 +81,10 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.perfil, .contact__form`)
-sr.reveal(`.info`,{origin: 'left',delay: 800})
-sr.reveal(`.skills`,{origin:'left',delay: 1000})
-sr.reveal(`.about`,{origin:'right',delay: 1200})
-sr.reveal(`.projects__card, .services__card, .experience__card`,{interval: 100})
+sr.reveal(`.info`, { origin: 'left', delay: 800 })
+sr.reveal(`.skills`, { origin: 'left', delay: 1000 })
+sr.reveal(`.about`, { origin: 'right', delay: 1200 })
+sr.reveal(`.projects__card, .services__card, .experience__card`, { interval: 100 })
 
 
 
