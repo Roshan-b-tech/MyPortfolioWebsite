@@ -13,12 +13,47 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive portfolio website - Bedimcode</title>
+      <title>My Portfolio</title>
    </head>
    <body>
       <!--==================== NAV ====================-->
       <nav class="nav">
-         
+         <ul class="nav__list">
+            <li>
+               <a href="#home" title="Home" class="nav__link active-link">
+                  <i class="ri-home-line"></i>
+                  
+               </a>
+            </li>
+
+            <li>
+               <a href="#projects" title="Projects" class="nav__link">
+                  <i class="ri-folder-line"></i>
+
+                  
+               </a>
+            </li>
+
+            <li>
+               <a href="#services" title="Services" class="nav__link">
+                  <i class="ri-file-edit-line"></i>
+                  
+               </a>
+            </li>
+
+            <li>
+               <a href="#experience" title="Experience" class="nav__link">
+                  <i class="ri-honour-line"></i>
+                  
+               </a>
+            </li>
+
+            <li>
+               <a href="#contact" title="Contact" class="nav__link">
+                  <i class="ri-send-plane-line"></i>
+               </a>
+            </li>
+         </ul>
       </nav>
 
       <!--==================== MAIN ====================-->
@@ -27,53 +62,410 @@
          <section class="home section" id="home">
             <div class="home__container container grid">
                <!--===== PERFIL =====-->
+               <div class="perfil">
+                  <img src="assets/img/new (2).png" alt="image" class="perfil__img">
+
+                  <div class="perfil__data">
+                     <h1 class="prefil__name">Roshan <br> Gallery</h1>
+
+                     <div class="prefil__buttons">
+                        <a href="#projects" class="button">Projects</a>
+                        <a href="#services" class="button button__black">Services</a>
+                     </div>
+
+                  </div>
+               </div>
+
 
 
                <!--===== INFO =====-->
+               <div class="info">
+                  <div class="info__data">
+                     <div class="info__circle"></div>
+                     <h1 class="info__name">Roshan Gallery</h1>
+                  </div>
+
+                  <div class="info__image">
+                     <img src="" alt="" class="info__img">
+                  </div>
+
+                  <p class="info__description">
+                     Passionate about creting and designing
+                     website with the best engaging interface
+                  </p>
+
+                  <a href="assets\pdf\MyResume.pdf" download target="_blank" class="button button__black">Download Resume</a>
+               </div>
+
+
 
 
                <!--===== ABOUT =====-->
+               <div class="about">
+                  <h3 class="about__name"><b>Web Developer & Data Science</b>
+                  </h3>
+
+                  <p class="about__description">
+                     Located in jaipur, i have 2 years of experience
+                      in web development carrying
+                      out several seccessfull project
+                     and currently learning data science 
+                  </p>
+                  <div class="about__social">
+                     <a href="https://www.linkedin.com/in/roshan-078041248/" target="_blank" class="about__link">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+                     <a href="https://github.com/Roshan-b-tech" target="_blank" class="about__link">
+                        <i class="ri-github-line"></i>
+                     </a>
+                     <a href="https://x.com/Developer_rosh" target="_blank" class="about__link">
+                        <i class="ri-twitter-x-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="about__image">
+                     <img src="" alt="" class="about__img">
+                  </div>
+
+                  <p class="about__note">
+                     I don't post messages on social networks, but if you send me an email, I'll respond.
+                  </p>
+
+                  <a href="#contact" class="button">Contact Me</a>
+               </div>
 
 
                <!--===== SKILLS =====-->
+               <div class="skills">
+                  <h2 class="skills__title">Skills</h2>
+
+                  <div class="skills__items">
+                     <img src="assets\img\skills-html.svg" alt="image" class="skills__item">
+                     <img src="assets\img\skills-css.svg" alt="image" class="skills__item">
+                     <img src="assets\img\skills-javascript.svg" alt="image" class="skills__item">
+                     <img src="assets\img\skills-react.svg" alt="image" class="skills__item">
+                     <img src="assets\img\skills-tailwind-css.svg" alt="image" class="skills__item">
+                     <img src="assets\img\skills-node.svg" alt="image" class="skills__item">
+                     <img src="assets/img/mongodb-icon-1.svg" alt="image" class="skills__item">
+                     <img src="assets/img/python-5.svg" alt="image" class="skills__item">
+                     <img src="assets/img/angular-icon-1.svg" alt="image" class="skills__item">
+                     <img src="assets/img/typescript.svg" alt="image" class="skills__item">
+                  </div>
+
+                  <p class="skills__description">
+                     Visit the projects section to see 
+                     the work done with these technologies.
+                  </p>
+               </div>
                
             </div>
          </section>
 
          <!--==================== PROJECTS ====================-->
          <section class="projects section" id="projects">
+            <h2 class="section__title">RECENT PROJECTS</h2>
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <a href="" target="_blank" class="projects__image">
+                     <img src="assets/img/p-1.webp" alt="image" class="projects__img">
+                  </a>
+                  <div class="projects__data">
+                     <h3 class="projects__name">Uber Clone</h3>
+                     <p class="projects__description">
+                        A ride-hailing service that offers safe payments, GPS monitoring, and real-time booking is called an Uber Clone.
+                         To guarantee a smooth experience, it comes with an admin panel, driver app, and rider app.
+                     </p>
+
+                     <div class="projects__skills">
+                        <img src="assets\img\skills-react.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-tailwind-css.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-node.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-javascript.svg" alt="image" class="projects__skill">
+                     </div>
+                     <a href="#" target="_blank" class="projects__button">
+                        <i class="ri-link"></i>
+                        <span>View Project</span>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <a href="https://fashy999.netlify.app/" target="_blank" class="projects__image">
+                     <img src="assets/img/ecommerce.png" alt="image" class="projects__img">
+                  </a>
+                  <div class="projects__data">
+                     <h3 class="projects__name">Fashy</h3>
+                     <p class="projects__description">
+                        Fashy is a modern e-commerce website built with the MERN stack (MongoDB, Express, React, Node.js). 
+                        It offers seamless shopping with secure payments, user authentication, and an intuitive UI for a smooth experience
+                     </p>
+
+                     <div class="projects__skills">
+                        <img src="assets\img\skills-react.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-tailwind-css.svg" alt="image" class="projects__skill">
+                        <img src="assets/img/mongodb-icon-1.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-javascript.svg" alt="image" class="projects__skill">
+                     </div>
+                     <a href="https://fashy999.netlify.app/" target="_blank" class="projects__button">
+                        <i class="ri-link"></i>
+                        <span>View Project</span>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <a href="" target="_blank" class="projects__image">
+                     <img src="assets/img/Blood Buddy.png" alt="image" class="projects__img">
+                  </a>
+                  <div class="projects__data">
+                     <h3 class="projects__name">Blood Buddy</h3>
+                     <p class="projects__description">
+                        Blood Buddy is a blood donation platform built with React, Node.js, and Express that connects donors with those in need.
+                         It enables users to find nearby donors, request blood, and contribute to life-saving donations efficiently
+                     </p>
+
+                     <div class="projects__skills">
+                        <img src="assets\img\skills-html.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-javascript.svg" alt="image" class="projects__skill">
+                        <img src="assets/img/mongodb-icon-1.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-css.svg" alt="image" class="projects__skill">
+                     </div>
+                     <a href="#" target="_blank" class="projects__button">
+                        <i class="ri-link"></i>
+                        <span>View Project</span>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <a href="https://swiggy-yt-project.vercel.app/" target="_blank" class="projects__image">
+                     <img src="assets/img/swiggy-clone.png" alt="image" class="projects__img">
+                  </a>
+                  <div class="projects__data">
+                     <h3 class="projects__name">Swiggy Clone</h3>
+                     <p class="projects__description">
+                        A Swiggy Clone is an online food delivery platform that replicates Swiggy’s features, including real-time order tracking,
+                         restaurant listings, secure payments, and user-friendly UI. Built with MERN/Next.js, 
+                        it ensures seamless ordering and delivery management
+                     </p>
+
+                     <div class="projects__skills">
+                        <img src="assets\img\skills-react.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-node.svg" alt="image" class="projects__skill">
+                        <img src="assets/img/typescript.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-github.svg" alt="image" class="projects__skill">
+                     </div>
+                     <a href="https://swiggy-yt-project.vercel.app/" target="_blank" class="projects__button">
+                        <i class="ri-link"></i>
+                        <span>View Project</span>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <a href="https://working-landing-page-five.vercel.app/" target="_blank" class="projects__image">
+                     <img src="assets/img/landing page.png" alt="image" class="projects__img">
+                  </a>
+                  <div class="projects__data">
+                     <h3 class="projects__name">Landing Page</h3>
+                     <p class="projects__description">
+                        A Digital Services Landing Page showcases professional online solutions like web development, SEO, marketing, and design. Built for engagement, 
+                        it features clear CTAs, service highlights, testimonials, and a contact form to convert visitors into clients.
+                     </p>
+
+                     <div class="projects__skills">
+                        <img src="assets\img\skills-react.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-tailwind-css.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-node.svg" alt="image" class="projects__skill">
+                        <img src="assets\img\skills-javascript.svg" alt="image" class="projects__skill">
+                     </div>
+                     <a href="https://working-landing-page-five.vercel.app/" target="_blank" class="projects__button">
+                        <i class="ri-link"></i>
+                        <span>View Project</span>
+                     </a>
+                  </div>
+               </article>
+            </div>
+
             
          </section>
 
          <!--==================== SERVICES ====================-->
          <section class="services section" id="services">
+            <h2 class="section__title">   SERVICES I OFFER </h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <div class="services__icon">
+                     <div class="services__circle"></div>
+                     <i class="ri-reactjs-line"></i>
+
+                  </div>
+                  <h3 class="services__name">Frontend Development</h3>
+                  <p class="services__description">
+                     My frontend development service delivers custom, high-performance, and responsive websites tailored to your needs. 
+                     Using modern technologies like React, Next.js, and UI frameworks, we create seamless, user-friendly experiences that elevate your brand.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <div class="services__icon">
+                     <div class="services__circle"></div>
+                     <i class="ri-database-2-fill"></i>
+
+                  </div>
+                  <h3 class="services__name">Backend Development</h3>
+                  <p class="services__description">
+                     My backend development service provides scalable, secure, and high-performance server-side solutions tailored to your needs.
+                      Using Node.js, Express, and databases like MySQL/MongoDB, we ensure seamless data management and API integration.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <div class="services__icon">
+                     <div class="services__circle"></div>
+                     <i class="ri-seo-line"></i>
+
+                  </div>
+                  <h3 class="services__name">Full Stack Development and Ai-Powered Automation </h3>
+                  <p class="services__description">
+                     I build scalable web & app solutions with seamless frontend-backend integration using React, Next.js, Node.js, and databases like MySQL/MongoDB. Additionally,
+                      I implement AI-driven automation, including chatbots, predictive analytics, and intelligent workflows, to enhance efficiency and innovation
+                  </p>
+               </article>
+            </div>
 
          </section>
 
          <!--==================== EXPERIENCE ====================-->
          <section class="experience section" id="experience">
+               <h2 class="section__title">EXPERIENCE OR WORK</h2>
+
+               <div class="experience__container container grid">
+                  <article class="experience__card">
+                     <h2 class="experience__company">TechnoHack</h2>
+
+                     <div class="experience__data">
+                  <h3 class="experience__profession">Full stack developer & java developer</h3>
+                  <span class="experience__date">2022 - 2023</span>
+                  <p class="experience__description">
+                     Short description of the work
+                     you do or did in the company
+                  </p>
+               </div>
+            </article>
+
+            <article class="experience__card">
+               <h2 class="experience__company">Whitecream</h2>
+
+               <div class="experience__data">
+            <h3 class="experience__profession">full stack developer</h3>
+            <span class="experience__date">2024 - 2025</span>
+            <p class="experience__description">
+               Short description of the work
+               you do or did in the company
+            </p>
+         </div>
+      </article>
+
+      <article class="experience__card">
+         <h2 class="experience__company">?</h2>
+
+         <div class="experience__data">
+      <h3 class="experience__profession">Letss see</h3>
+      <span class="experience__date">2025 - 2026</span>
+      <p class="experience__description">
+         Hope will post soon about it
+      </p>
+   </div>
+</article>
+         </div>
+
             
          </section>
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
-            
+            <h2 class="section__title">CONTACT ME</h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form grid" id="contact-form">
+                  <div class="contact__group grid">
+                     <input type="text"  name="user_name" placeholder="Names" required  class="contact__input">
+                     <input type="email" name="user_email" placeholder="Email" required  class="contact__input">
+                  </div>
+
+                  <textarea name="user_message" placeholder="Message" class="contact__input contact__area"></textarea>
+                  <button type="submit" class="button contact__button">Send Message</button>
+
+                  <p class="contact__message" id="contact-message"></p>
+               </form>
+
+            </div>
          </section>
       </main>
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <a href="#" class="footer__logo">Roshan</a>
+
+               <ul class="footer__links">
+
+                  <li>
+                     <a href="#home" class="footer__link">Home</a>
+                  </li>
+
+                  <li>
+                     <a href="#projects" class="footer__link">Projects</a>
+                  </li>
+
+                  <li>
+                     <a href="#services" class="footer__link">Services</a>
+                  </li>
+
+               </ul>
+            </div>
+
+           <div class="footer__social">
+            <a href="https://www.instagram.com/roshangehlot?igsh=MWdsbDlhd3JtYnQ4ag==" target="_blank" class="footer__social-link">
+               <i class="ri-instagram-line"></i>
+
+            </a>
+
+            <a href="https://wa.me/919784117842" target="_blank" class="footer__social-link">
+               <i class="ri-whatsapp-line"></i>
+               
+            </a>
+
+            <a href="https://www.linkedin.com/in/roshan-078041248/" target="_blank" class="footer__social-link">
+               <i class="ri-linkedin-box-fill"></i>
+
+               
+            </a>
+           </div> 
+         </div>
+
+         <span class="footer__copy">
+            &#169; All rights reserved Ny Bedimcode
+         </span>
+            
          
       </footer>
 
       <!--========== SCROLL UP ==========-->
 
+      <a href="" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
 
       <!--=============== EMAIL JS ===============-->
-      <script src=""></script>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
