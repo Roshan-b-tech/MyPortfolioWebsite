@@ -20,6 +20,12 @@
       <nav class="nav">
          <ul class="nav__list">
             <li>
+               <a href="#" title="Chat" class="nav__link nav__link--chatbot" id="chatbot-nav-toggle">
+                  <i class="ri-message-3-line"></i>
+               </a>
+            </li>
+
+            <li>
                <a href="#home" title="Home" class="nav__link active-link">
                   <i class="ri-home-line"></i>
                   
@@ -582,6 +588,38 @@ Browse, search, and discover video games with a sleek and responsive user interf
 
       <!--=============== CONFIG ===============-->
       <script src="config.js"></script>
+
+      <!--=============== CHATBOT ===============-->
+      <div class="chatbot" id="chatbot">
+         <div class="chatbot__container">
+            <div class="chatbot__header">
+               <div class="chatbot__avatar">
+                  <img src="assets/img/new (2).png" alt="Roshan" class="chatbot__img">
+               </div>
+               <div class="chatbot__info">
+                  <h3 class="chatbot__name">Roshan Gallery</h3>
+                  <p class="chatbot__status">Online</p>
+               </div>
+            </div>
+            
+            <div class="chatbot__messages" id="chatbot-messages">
+               <div class="chatbot__message chatbot__message--bot">
+                  <div class="chatbot__message-content">
+                     <p>Hi! I'm Roshan, a web developer and data scientist. 👋</p>
+                     <p>How can I help you today?</p>
+                  </div>
+                  <div class="chatbot__message-time">Just now</div>
+               </div>
+            </div>
+            
+            <div class="chatbot__input-container">
+               <input type="text" id="chatbot-input" class="chatbot__input" placeholder="Type your message...">
+               <button id="chatbot-send" class="chatbot__send">
+                  <i class="ri-send-plane-fill"></i>
+               </button>
+            </div>
+         </div>
+      </div>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
